@@ -1,0 +1,13 @@
+n = int(input())
+lc = 0
+while n > 0:
+  word = str(input(''))
+  for i in word:
+    lc += 1
+  if lc > 10:
+    print (word[:1] + str((len(word) - 2)) + word[len(word) - 1])
+    lc = 0
+  else:
+    print (word)
+    lc = 0
+  n -= 1
