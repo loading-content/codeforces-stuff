@@ -1,0 +1,9 @@
+for i in range(5):
+  c = input().find('1')
+
+  if c != -1:
+    c //= 2
+    collumb = abs(2 - c)
+    row = abs(2 - i)
+
+print(collumb + row)
